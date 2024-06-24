@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backimage"
+        android:alpha="0.8"
+        android:id="@+id/background"
+        />
+
+
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:hint="Enter Email"
+        android:id="@+id/username"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/email"
+        android:typeface="monospace"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Email:"
+        android:textSize="20dp"
+        android:typeface="serif" />
+
+
+
+    <EditText
+        android:layout_width="191dp"
+        android:layout_height="46dp"
+        android:hint="Enter Code"
+        android:id="@+id/code"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/email"
+        android:layout_below="@id/username"
+        android:typeface="monospace"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/codeTitle"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/username"
+        android:layout_marginLeft="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Code:"
+        android:textSize="20dp"
+        android:typeface="serif" />
+
+
+
+
+    <TextView
+        android:id="@+id/emailWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/code"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="#F00"
+        android:layout_alignLeft="@id/email"
+        android:layout_alignRight="@id/username"
+        android:padding="10dp"
+        android:text="MUST ENTER A VALID EMAIL"
+        android:textSize="18dp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Play"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/username"
+        android:backgroundTint="#000"
+        android:onClick="play"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+
+    <Button
+        android:id="@+id/sendCode"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Send Code"
+        android:textSize="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/username"
+        android:backgroundTint="#000"
+        android:onClick="sendCode"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        />
+
+
+
+</RelativeLayout>
