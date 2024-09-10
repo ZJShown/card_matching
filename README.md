@@ -4,6 +4,14 @@
 
 This card-matching game challenges users to match pairs of cards from a randomly shuffled 4x4 grid. The user can start the game after entering and verifying their email, and their performance is recorded based on how fast they complete the game. A leaderboard system tracks and displays scores for different users, using Firebase for remote data storage.
 
+## Table of Contents
+- [Features](https://github.com/ZJShown/card_matching?tab=readme-ov-file#features)
+- [Screens](https://github.com/ZJShown/card_matching?tab=readme-ov-file#screens)
+- [Technical Details](https://github.com/ZJShown/card_matching?tab=readme-ov-file#technical-details)
+- [Installation](https://github.com/ZJShown/card_matching?tab=readme-ov-file#installation)
+- [Future Improvements](https://github.com/ZJShown/card_matching?tab=readme-ov-file#future-improvements)
+- [Screenshots](https://github.com/ZJShown/card_matching?tab=readme-ov-file#screenshots)
+
 ## Features
 
 - **Grid Layout**: The game board consists of a 4x4 grid where each cell contains a hidden card. Cards are shuffled randomly at the start of each game.
